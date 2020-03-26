@@ -1,1 +1,1 @@
-console.log('sadas')
+import './autoImport';
