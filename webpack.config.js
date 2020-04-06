@@ -37,6 +37,18 @@ module.exports = async () =>{
         module: {
             rules: [
                 {
+                    test: /\.(png|jpg|jpeg|svg)/,
+                    use: [
+                        {
+                            loader: 'file-loader',
+                            options: {
+                                outputPath: 'images',
+                                name: '[name].[ext]'
+                            }
+                        }
+                    ]
+                },
+                {
                     test: /\.pug$/,
                     loader: 'pug-loader',
                     exclude: '/node-modules'

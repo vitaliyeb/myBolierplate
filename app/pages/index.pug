@@ -1,10 +1,216 @@
 extends ../layout/main
 
 block variable
-    - var title = 'Index';
+    - var title = 'Консультации юриста в Челябинске';
 
 
-block content
-    p index 12
-
-
+block wrapper
+    header(class='header')
+        div(class='container header__container')
+            nav(class='header__navigate')
+                ul(class='header__list')
+                    li
+                        a(class='header__link' href='#consultation' data-index='0') <span>Юрист в Челябинске </span> <span>Юрист</span>
+                    li
+                        a(class='header__link' href='#services' data-index='1') <span>Юридические услуги</span> <span>Услуги</span>
+                    li
+                        a(class='header__link' href='#price' data-index='2') Прайс
+                    li
+                        a(class='header__link' href='#contact' data-index='3') Контакты
+            address(class='header__address')
+                img(src='./images/phone.png')
+                a(class='header__phone' href='tel:+7-951-466-65-32') +7-951-466-65-32
+    main(class='container')
+        div(class='consultation' id='consultation')
+            h1(class='consultation__heading heading text_montserrat') Консультации юриста <br> в Челябинске
+            div(class='consultation__wrapper')
+                div(class='consultation__info')
+                    div(class='consultation__note')
+                        img(class='consultation__note-image' src='./images/phone_t.png')
+                        p(class='consultation__note-text') +7-951-466-65-32
+                    div(class='consultation__note')
+                        img(class='consultation__note-image' src='./images/email.png')
+                        p(class='consultation__note-text') 89514666532@mail.ru
+                    p(class='consultation__description') Квалифицированная помощь опытного юриста.<br>Ваша проблема - наше решение. Качество и надёжность.
+                div(class='consultation__image-wrapper')
+                    img(class='consultation__image' src='./images/ill_2.svg')
+        div(class='about-me')
+            h2(class='about-me__heading heading') Обо мне
+            div(class='about-me__wrapper')
+                div(class='about-me__photo-wrapper')
+                    img(class='about-me__photo' src='./images/mePhoto.png')
+                div(class='about-me__description')
+                    h3(class='about-me__subheading') Ивин Сергей Юрьевич
+                    p(class='about-me__text')
+                        |Я частный юрист. Работаю более 11 лет в различных отраслях права: жилищном, трудовом, семейном, взыскания долгов. Специализируюсь в исполнительном производстве.<br>
+                        |Оказываю услуги для физических и юридических лиц в  Челябинске и в Челябинской области. По договоренности могу выезжать в соседние регионы.<br>
+                        |Моя цель — оказание качественных услуг, без пустых обещаний, обмана и «развода на деньги».<br>
+        div(class='services' id='services')
+            h2(class='services__heading heading') Юридические услуги
+            ul(class='services__list')
+                li(class='services__item')
+                    p(class='services__item-subheading') Взыскание задолженности
+                    div(class='services__item-button')
+                    div(class='services__item-description')
+                        p(class='services__item-title') Предоставляю следующие услуги для возврата долга:
+                        ul(class='services__item-list')
+                            li(class='services__item-text') • юридическая экспертиза документов, подтверждающих долговые обязательства;
+                            li(class='services__item-text') • составление и подача иска о взыскании задолженности;
+                            li(class='services__item-text') • установление материального положения должника и наложение ареста на его имущество;
+                            li(class='services__item-text') • представление интересов в суде;
+                            li(class='services__item-text') • взаимодействие с федеральной службой судебных приставов для исполнения решения суда.
+                li(class='services__item')
+                    p(class='services__item-subheading') Исполнительное производство
+                    div(class='services__item-button')
+                    div(class='services__item-description')
+                        p(class='services__item-title') Обеспечиваю полное сопровождение исполнительного производства как со стороны взыскателя, так со стороны должника. Защищаю права и интересы сторон в исполнительном производстве.
+                        ul(class='services__item-list')
+                            li(class='services__item-text') • Представительство интересов в службе судебных приставов;
+                            li(class='services__item-text') • подача исполнительного документа для возбуждения исполнительного производства;
+                            li(class='services__item-text') • помощь при незаконном списании денежных средств с банковской карты;
+                            li(class='services__item-text') • отмена запрета на авто из-за другого должника;
+                            li(class='services__item-text') • обжалование действий и бездействий судебных приставов;
+                            li(class='services__item-text') • отмена судебного приказа.
+                li(class='services__item')
+                    p(class='services__item-subheading') Трудовые споры
+                    div(class='services__item-button')
+                    div(class='services__item-description')
+                        p(class='services__item-title') Для успешного решения конфликтов в сфере трудовых правоотношений, необходима квалифицированная помощь юриста, которую я и оказываю:
+                        ul(class='services__item-list')
+                            li(class='services__item-text') • составление жалоб, исковых заявлений, претензий, мировых и иных соглашений;
+                            li(class='services__item-text') • консультации;
+                            li(class='services__item-text') • представительство интересов работника в судах и надзорных органах;
+                            li(class='services__item-text') • проверка и оспаривание трудовых договоров;
+                            li(class='services__item-text') • посредничество при урегулировании трудовых споров;
+                            li(class='services__item-text') • оспаривание неправомерных решений судов и надзорных органов, кассационные и надзорные жалобы.
+                li(class='services__item')
+                    p(class='services__item-subheading') Защита прав потребителей
+                    div(class='services__item-button')
+                    div(class='services__item-description')
+                        p(class='services__item-title')
+                        ul(class='services__item-list')
+                            li(class='services__item-text') • Составление претензии о ненадлежащем выполнении услуг или качестве товара;
+                            li(class='services__item-text') • досудебное урегулирование спора;
+                            li(class='services__item-text') • составление, подача искового заявления о защите прав потребителя;
+                            li(class='services__item-text') • подготовка и согласование мирового соглашения.
+                li(class='services__item')
+                    p(class='services__item-subheading') Разрешение споров с застройщиком
+                    div(class='services__item-button')
+                    div(class='services__item-description')
+                        p(class='services__item-title')
+                        ul(class='services__item-list')
+                            li(class='services__item-text') • Взыскание денежных сумм при нарушении сроков передачи жилья дольщику, в том числе, убытков сверх неустойки, компенсации расходов на аренду жилья и т.п.;
+                            li(class='services__item-text') • составление претензий и исковых заявлений;
+                            li(class='services__item-text') • анализ содержания договора, приложений и дополнений к нему;
+                            li(class='services__item-text') • комплексное ведение дела в судах всех инстанций;
+                            li(class='services__item-text') • консультации по спорам, возникающим из долевого строительства;
+                            li(class='services__item-text') • обжалование судебных актов.
+                li(class='services__item')
+                    p(class='services__item-subheading') Семейные споры
+                    div(class='services__item-button')
+                    div(class='services__item-description')
+                        p(class='services__item-title')
+                        ul(class='services__item-list')
+                            li(class='services__item-text') • Расторжение брака в судебном порядке;
+                            li(class='services__item-text') • расторжение брака с разделом имущества;
+                            li(class='services__item-text') • споры по разделу имущества супругов (после расторжения брака);
+                            li(class='services__item-text') • определение места жительства детей, установление порядка общения с ребенком, , устранение препятствий к общению с ребенком, вопросы воспитания ребенка;
+                            li(class='services__item-text') • признание брака недействительным;
+                            li(class='services__item-text') • составление соглашения о разделе совместно нажитого имущества;
+                            li(class='services__item-text') • составление брачного контракта;
+                            li(class='services__item-text') • взыскание алиментов;
+                            li(class='services__item-text') • составление алиментного соглашения – урегулирования вопроса выплаты алиментов во внесудебном порядке;
+                            li(class='services__item-text') • уменьшение размеров алиментов;
+                            li(class='services__item-text') • установление, либо оспаривание факта отцовства;
+                            li(class='services__item-text') • защита родительских прав, лишение или ограничение родительских прав.
+                li(class='services__item')
+                    p(class='services__item-subheading') Наследственные споры
+                    div(class='services__item-button')
+                    div(class='services__item-description')
+                        p(class='services__item-title')
+                        ul(class='services__item-list')
+                            li(class='services__item-text') • Раздел наследства;
+                            li(class='services__item-text') • восстановление срока для принятия наследства в судебном порядке;
+                            li(class='services__item-text') • наследственные споры;
+                            li(class='services__item-text') • выдел наследуемой части имущества из общей совместной собственности;
+                            li(class='services__item-text') • установление в суде факта принятия наследства;
+                            li(class='services__item-text') • установление факта родственных отношений в судебном порядке, когда невозможно восстановить документы, подтверждающие родство;
+                            li(class='services__item-text') • оспаривание завещания не действительным или его признание.
+                li(class='services__item')
+                    p(class='services__item-subheading') Банкротство физических лиц
+                    div(class='services__item-button')
+                    div(class='services__item-description')
+                        p(class='services__item-title') Стоимость указанных услуг договорная (в зависимости от сложности дела).
+                        ul(class='services__item-list')
+                            li(class='services__item-text') • Консультация о необходимости в процедуре банкротства;
+                            li(class='services__item-text') • подготовка и сбор всех необходимых документов для подачи заявления в суд;
+                            li(class='services__item-text') • правовое сопровождение процедуры банкротства;
+                            li(class='services__item-text') • подготовка заявления о признании должника банкротом;
+                            li(class='services__item-text') • услуги арбитражного управляющего;
+                            li(class='services__item-text') • участие в собраниях кредиторов;
+                            li(class='services__item-text') • определение признаков преднамеренного и фиктивного банкротства граждан и индивидуальных предпринимателей;
+                            li(class='services__item-text') • составление анализа финансового состояния граждан и ИП.
+        div(class='price' id='price')
+            h2(class='price__heading heading') Прайс
+            p(class='price__description') Цена на оказываемые услуги может варьироваться в зависимости от сложности дела.
+            div(class='price__item')
+                p(class='price__title') Юридическая консультация устная
+                p(class='price__price') 400 руб.
+            div(class='price__item')
+                p(class='price__title') Юридическая консультация устная с изучением документов
+                p(class='price__price') 800 руб.
+            div(class='price__item')
+                p(class='price__title') Составление договоров, мировых соглашений
+                p(class='price__price') 800 руб.
+            div(class='price__item')
+                p(class='price__title') Составление заявления, ходатайства, претензии
+                p(class='price__price') 800 руб.
+            div(class='price__item')
+                p(class='price__title') Составление иска
+                p(class='price__price') от 1500 руб.
+            div(class='price__item')
+                p(class='price__title') Составление жалобы (апелляция)
+                p(class='price__price') от 2500 руб.
+            div(class='price__item')
+                p(class='price__title') Составление жалобы (кассация)
+                p(class='price__price') от 3000 руб.
+            div(class='price__item')
+                p(class='price__title') Участие в судебном заседании (мировой суд)
+                p(class='price__price') 1000 руб.
+            div(class='price__item')
+                p(class='price__title') Участие в судебном заседании (районный/город. суд)
+                p(class='price__price') от 1500 руб.
+            div(class='price__item')
+                p(class='price__title') Участие в судебном заседании (апелляция/областной суд/арбитраж)
+                p(class='price__price') от 2000 руб.
+            div(class='price__item')
+                p(class='price__title') Участие в судебном заседании (апелляция арбитраж)
+                p(class='price__price') от 2500 руб.
+            div(class='price__item')
+                p(class='price__title') Комплексное ведение дела в суде
+                p(class='price__price') от 10000 руб.
+            h2(class='price__subheading') Исполнительное производство
+            div(class='price__item')
+                p(class='price__title') Консультация по исполнительному производству
+                p(class='price__price') от 800 руб
+            div(class='price__item')
+                p(class='price__title') Ознакомление с материалами исполнительного производства
+                p(class='price__price') от 2000 руб.
+            div(class='price__item')
+                p(class='price__title') Составление заявления о возбуждении исполнительного производства
+                p(class='price__price') от 500 руб.
+            div(class='price__item')
+                p(class='price__title') Сопровождение исполнительного производства
+                p(class='price__price') от 8000 руб.
+            div(class='price__item')
+                p(class='price__title') Составление жалобы на действия, бездействия судебного пристава
+                p(class='price__price') от 2000 руб.
+    footer(class='footer container' id='contact')
+        h2(class='footer__heading heading') Контакты
+        div(class='footer__wrapper')
+            div(class='footer__item')
+                img(class='footer__image' src='./images/phone_t.png')
+                p(class='footer__text') +7-951-466-65-32
+            div(class='footer__item')
+                img(class='footer__image' src='./images/email.png')
+                p(class='footer__text') 89514666532@mail.ru
