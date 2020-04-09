@@ -24,7 +24,6 @@
 
 
     function setNavigate(index){
-        console.log(index)
         AllLink[oldIndex].classList.remove('header__link_active');
         AllLink[index].classList.add('header__link_active');
         oldIndex = index;
